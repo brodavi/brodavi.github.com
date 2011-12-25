@@ -1,0 +1,13 @@
+body {
+    background: #633152;
+}
+a {
+    color: #936182;
+}
+div#header {
+    height: 20%;
+    border: solid black 2px;
+}
+div {
+    text-align: center;
+}
