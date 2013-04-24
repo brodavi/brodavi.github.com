@@ -1,13 +1,18 @@
 body {
-    background: #633152;
+    color: #691791;
+    background: #223344;
 }
 a {
     color: #936182;
 }
 div#header {
-    height: 20%;
+    margin: 40px;
     border: solid black 2px;
 }
+li {
+    margin: 21px;
+}
 div {
+    width : 67%;
     text-align: center;
 }
