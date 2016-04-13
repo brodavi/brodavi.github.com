@@ -1,18 +1,112 @@
+/*
+
+main #d8f8bc
+
+complement #dcbcf8
+
+shades
+
+#d8f8bc
+#c2dfa9
+#acc696
+#97ad83
+#819470
+#6c7c5e
+#56634b
+#404a38
+#2b3125
+#151812
+#000000
+
+monochromatics
+
+#d8f8bc
+#dff9c9
+#e7fad6
+#effce4
+#f7fdf1
+#ffffff
+
+*/
+
 body {
-    color: #691791;
-    background: #223344;
+  color: #56634b;
+  background: #d8f8bc;
+  font-family: monospace;
 }
-a {
-    color: #936182;
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
-div#header {
-    margin: 40px;
-    border: solid black 2px;
-}
-li {
-    margin: 21px;
-}
+
 div {
-    width : 67%;
-    text-align: center;
+  text-align: center;
+}
+
+h2 {
+  color: #dcbcf8;
+}
+
+img {
+  margin: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgdiv {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.game {
+  width: 220px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.title {
+  color: #56634b;
+  padding: 10px;
+}
+
+.deco {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.decoration01 {
+  flex-grow: 0.25;
+  width: 20px;
+  border: 10px solid #e7fad6;
+  border-bottom: 0px;
+  border-top-right-radius: 20px;
+}
+
+.decoration02 {
+  flex-grow: 0.75;
+  width: 50px;
+  border: 10px solid #e7fad6;
+  border-top-right-radius: 30px;
+}
+
+.textshadowed {
+  text-shadow: 1px 1px 0.5px #effce4
+}
+
+.boxshadowed {
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 3px 2px #acc696;
+  -webkit-box-shadow: 1px 1px 3px 2px #acc696;
+  box-shadow:         1px 1px 3px 2px #acc696;
 }
