@@ -35,21 +35,36 @@ body {
   font-family: monospace;
 }
 
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+a:hover, a:visited, a:link, a:active {
+  color: #56634b;
+  margin: 20px;
+  text-decoration: none;
 }
 
 div {
   text-align: center;
 }
 
-h2 {
-  color: #dcbcf8;
-}
-
 img {
   margin: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  flex-shrink: 1;
+  align-self: flex-start;
+  margin: 0;
+  opacity: 0.2;
+  width: 100px;
+}
+
+.somegames {
+  flex-grow: 1;
+  align-self: stretch;
 }
 
 .main-container {
@@ -70,7 +85,6 @@ img {
 
 .game {
   width: 220px;
-  margin: 20px;
   padding: 20px;
 }
 
@@ -79,34 +93,70 @@ img {
   padding: 10px;
 }
 
-.deco {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.decoration01 {
-  flex-grow: 0.25;
-  width: 20px;
-  border: 10px solid #e7fad6;
-  border-bottom: 0px;
-  border-top-right-radius: 20px;
-}
-
-.decoration02 {
-  flex-grow: 0.75;
-  width: 50px;
-  border: 10px solid #e7fad6;
-  border-top-right-radius: 30px;
-}
-
 .textshadowed {
   text-shadow: 1px 1px 0.5px #effce4
 }
 
 .boxshadowed {
   border-radius: 5px;
-  -moz-box-shadow: 1px 1px 3px 2px #acc696;
-  -webkit-box-shadow: 1px 1px 3px 2px #acc696;
-  box-shadow:         1px 1px 3px 2px #acc696;
+  -moz-box-shadow: .5px .5px 1.5px 1px #acc696;
+  -webkit-box-shadow: .5px .5px 1.5px 1px #acc696;
+  box-shadow:         .5px .5px 1.5px 1px #acc696;
+}
+
+.boxshadowed:hover {
+  border-radius: 5px;
+  -moz-box-shadow: 3px 3px 5px 4px #acc696;
+  -webkit-box-shadow: 3px 3px 5px 4px #acc696;
+  box-shadow:         3px 3px 5px 4px #acc696;
+}
+
+.deco1 {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.decoration1a {
+  flex-grow: 0.25;
+  width: 20px;
+  border: 10px solid #e7fad6;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.decoration1b {
+  flex-grow: 0.75;
+  width: 0px;
+  border: 5px solid #e7fad6;
+  border-bottom-left-radius: 20px;
+}
+
+.deco2 {
+  width: 95%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.decoration2a {
+  flex-grow: 0.2;
+  height: 50px;
+  border: 10px solid #e7fad6;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.decoration2b {
+  flex-grow: 0.6;
+  height: 5px;
+  border: 15px solid #e7fad6;
+}
+
+.decoration2c {
+  flex-grow: 0.2;
+  height: 50px;
+  border: 10px solid #e7fad6;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
