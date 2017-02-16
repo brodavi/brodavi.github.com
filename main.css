@@ -72,6 +72,14 @@ img {
   flex-direction: row;
 }
 
+.not-games-container {
+  margin-left: 100px;
+}
+
+.not-game {
+  width: 300px;
+}
+
 .imgdiv {
   display: flex;
   flex-direction: column-reverse;
